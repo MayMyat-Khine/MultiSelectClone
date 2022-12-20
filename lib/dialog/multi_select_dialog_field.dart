@@ -306,14 +306,14 @@ class __MultiSelectDialogFieldViewState<V>
   void didUpdateWidget(_MultiSelectDialogFieldView<V> oldWidget) {
     super.didUpdateWidget(oldWidget);
 
-    if (oldWidget.initialValue != widget.initialValue) {
-      _selectedItems = [];
-      _selectedItems.addAll(widget.initialValue);
+    // if (oldWidget.initialValue != widget.initialValue) {
+    _selectedItems = [];
+    _selectedItems.addAll(widget.initialValue);
 
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        widget.state!.didChange(_selectedItems);
-      });
-    }
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      widget.state!.didChange(_selectedItems);
+    });
+    // }
   }
 
   Widget _buildInheritedChipDisplay() {
