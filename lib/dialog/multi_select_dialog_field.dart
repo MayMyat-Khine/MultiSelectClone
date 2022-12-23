@@ -446,6 +446,54 @@ class __MultiSelectDialogFieldViewState<V>
                                   : 1.8
                               : 1.2,
                         ),
+                        top: BorderSide(
+                          color: widget.state != null && widget.state!.hasError
+                              ? Colors.red.shade800.withOpacity(0.6)
+                              : _selectedItems.isNotEmpty
+                                  ? (widget.selectedColor != null &&
+                                          widget.selectedColor !=
+                                              Colors.transparent)
+                                      ? widget.selectedColor!
+                                      : Theme.of(context).primaryColor
+                                  : Colors.black45,
+                          width: _selectedItems.isNotEmpty
+                              ? (widget.state != null && widget.state!.hasError)
+                                  ? 1.4
+                                  : 1.8
+                              : 1.2,
+                        ),
+                        left: BorderSide(
+                          color: widget.state != null && widget.state!.hasError
+                              ? Colors.red.shade800.withOpacity(0.6)
+                              : _selectedItems.isNotEmpty
+                                  ? (widget.selectedColor != null &&
+                                          widget.selectedColor !=
+                                              Colors.transparent)
+                                      ? widget.selectedColor!
+                                      : Theme.of(context).primaryColor
+                                  : Colors.black45,
+                          width: _selectedItems.isNotEmpty
+                              ? (widget.state != null && widget.state!.hasError)
+                                  ? 1.4
+                                  : 1.8
+                              : 1.2,
+                        ),
+                        right: BorderSide(
+                          color: widget.state != null && widget.state!.hasError
+                              ? Colors.red.shade800.withOpacity(0.6)
+                              : _selectedItems.isNotEmpty
+                                  ? (widget.selectedColor != null &&
+                                          widget.selectedColor !=
+                                              Colors.transparent)
+                                      ? widget.selectedColor!
+                                      : Theme.of(context).primaryColor
+                                  : Colors.black45,
+                          width: _selectedItems.isNotEmpty
+                              ? (widget.state != null && widget.state!.hasError)
+                                  ? 1.4
+                                  : 1.8
+                              : 1.2,
+                        ),
                       ),
                     )
                 : widget.decoration,
