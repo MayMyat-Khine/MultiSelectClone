@@ -429,7 +429,7 @@ class __MultiSelectDialogFieldViewState<V>
             decoration: widget.state != null
                 ? widget.decoration ??
                     BoxDecoration(
-                      borderRadius: BorderRadius.circular(3),
+                      borderRadius: BorderRadius.all(Radius.circular(4.0)),
                       border: Border(
                         bottom: BorderSide(
                           color: widget.state != null && widget.state!.hasError
@@ -440,7 +440,7 @@ class __MultiSelectDialogFieldViewState<V>
                                               Colors.transparent)
                                       ? widget.selectedColor!
                                       : Theme.of(context).primaryColor
-                                  : Colors.grey,
+                                  : Colors.grey.withOpacity(0.6),
                           width: _selectedItems.isNotEmpty
                               ? (widget.state != null && widget.state!.hasError)
                                   ? 1.4
@@ -456,7 +456,7 @@ class __MultiSelectDialogFieldViewState<V>
                                               Colors.transparent)
                                       ? widget.selectedColor!
                                       : Theme.of(context).primaryColor
-                                  : Colors.grey,
+                                  : Colors.grey.withOpacity(0.6),
                           width: _selectedItems.isNotEmpty
                               ? (widget.state != null && widget.state!.hasError)
                                   ? 1.4
@@ -472,7 +472,7 @@ class __MultiSelectDialogFieldViewState<V>
                                               Colors.transparent)
                                       ? widget.selectedColor!
                                       : Theme.of(context).primaryColor
-                                  : Colors.grey,
+                                  : Colors.grey.withOpacity(0.6),
                           width: _selectedItems.isNotEmpty
                               ? (widget.state != null && widget.state!.hasError)
                                   ? 1.4
@@ -488,7 +488,7 @@ class __MultiSelectDialogFieldViewState<V>
                                               Colors.transparent)
                                       ? widget.selectedColor!
                                       : Theme.of(context).primaryColor
-                                  : Colors.grey,
+                                  : Colors.grey.withOpacity(0.6),
                           width: _selectedItems.isNotEmpty
                               ? (widget.state != null && widget.state!.hasError)
                                   ? 1.4
