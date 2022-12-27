@@ -440,7 +440,7 @@ class __MultiSelectDialogFieldViewState<V>
                                               Colors.transparent)
                                       ? widget.selectedColor!
                                       : Theme.of(context).primaryColor
-                                  : Colors.yellow.withOpacity(0.6),
+                                  : Colors.grey.withOpacity(0.6),
                           width: _selectedItems.isNotEmpty
                               ? (widget.state != null && widget.state!.hasError)
                                   ? 1.4
