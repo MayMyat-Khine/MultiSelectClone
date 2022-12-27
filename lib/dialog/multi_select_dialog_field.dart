@@ -429,7 +429,7 @@ class __MultiSelectDialogFieldViewState<V>
             decoration: widget.state != null
                 ? widget.decoration ??
                     BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(4.0)),
+                      // borderRadius: BorderRadius.all(Radius.circular(4.0)),
                       border: Border(
                         bottom: BorderSide(
                           color: widget.state != null && widget.state!.hasError
